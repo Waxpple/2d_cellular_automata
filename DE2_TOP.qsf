@@ -39,15 +39,12 @@ set_location_assignment PIN_E19 -to AUD_ADCDAT
 set_global_assignment -name VERILOG_FILE vga_buffer.v
 set_global_assignment -name VERILOG_FILE VGA_Controller/VGA_Controller.v
 set_global_assignment -name VERILOG_FILE Reset_Delay.v
-set_global_assignment -name VERILOG_FILE VGA_Audio_PLL.v
 set_global_assignment -name VERILOG_FILE VGA_640x480_m4k_DLA.v
 set_global_assignment -name QIP_FILE vga_buffer.qip
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name MISC_FILE "C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/DE2_TOP.dpf"
-set_global_assignment -name QIP_FILE vga_buffer_2.qip
-set_global_assignment -name QIP_FILE VGA_Audio_PLL.qip
 set_location_assignment PIN_F19 -to AUD_ADCLRCK
 set_location_assignment PIN_E17 -to AUD_BCLK
 set_location_assignment PIN_F18 -to AUD_DACDAT
@@ -140,6 +137,6 @@ set_location_assignment PIN_E23 -to VGA_R[1]
 set_location_assignment PIN_D23 -to VGA_R[0]
 set_location_assignment PIN_B15 -to VGA_SYNC
 set_location_assignment PIN_H19 -to VGA_VS
-set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name QIP_FILE VGA_Controller/VGA_Audio_PLL.qip

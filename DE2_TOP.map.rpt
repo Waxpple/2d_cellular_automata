@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_TOP
-Mon Jul 06 19:56:09 2020
+Mon Jul 06 20:49:24 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -52,13 +52,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 06 19:56:09 2020   ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 06 20:49:23 2020   ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                      ; DE2_TOP                                 ;
 ; Top-level Entity Name              ; DE2_TOP                                 ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 737                                     ;
-;     Total combinational functions  ; 718                                     ;
+; Total logic elements               ; 742                                     ;
+;     Total combinational functions  ; 725                                     ;
 ;     Dedicated logic registers      ; 196                                     ;
 ; Total registers                    ; 196                                     ;
 ; Total pins                         ; 93                                      ;
@@ -152,9 +152,9 @@ applicable agreement for further details.
 ; vga_buffer.v                     ; yes             ; User Wizard-Generated File   ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/vga_buffer.v                    ;
 ; VGA_Controller/VGA_Controller.v  ; yes             ; User Verilog HDL File        ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/VGA_Controller/VGA_Controller.v ;
 ; Reset_Delay.v                    ; yes             ; User Verilog HDL File        ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/Reset_Delay.v                   ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/VGA_Audio_PLL.v                 ;
 ; VGA_640x480_m4k_DLA.v            ; yes             ; User Verilog HDL File        ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/VGA_640x480_m4k_DLA.v           ;
-; VGA_Controller/VGA_Param.h       ; yes             ; Auto-Found Unspecified File  ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/VGA_Controller/VGA_Param.h      ;
+; VGA_Controller/VGA_Audio_PLL.v   ; yes             ; User Wizard-Generated File   ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/VGA_Controller/VGA_Audio_PLL.v  ;
+; VGA_Param.h                      ; yes             ; Auto-Found Unspecified File  ; C:/Users/ea924/Downloads/VGA_640x480_m4k/VGA_m4k/VGA_Param.h                     ;
 ; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altpll.tdf                          ;
 ; aglobal90.inc                    ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc                       ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/stratix_pll.inc                     ;
@@ -180,17 +180,17 @@ applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 737                                            ;
+; Estimated Total logic elements              ; 742                                            ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 718                                            ;
+; Total combinational functions               ; 725                                            ;
 ; Logic element usage by number of LUT inputs ;                                                ;
 ;     -- 4 input functions                    ; 469                                            ;
-;     -- 3 input functions                    ; 44                                             ;
-;     -- <=2 input functions                  ; 205                                            ;
+;     -- 3 input functions                    ; 43                                             ;
+;     -- <=2 input functions                  ; 213                                            ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 616                                            ;
-;     -- arithmetic mode                      ; 102                                            ;
+;     -- normal mode                          ; 617                                            ;
+;     -- arithmetic mode                      ; 108                                            ;
 ;                                             ;                                                ;
 ; Total registers                             ; 196                                            ;
 ;     -- Dedicated logic registers            ; 196                                            ;
@@ -201,8 +201,8 @@ applicable agreement for further details.
 ; Total PLLs                                  ; 1                                              ;
 ; Maximum fan-out node                        ; VGA_Audio_PLL:p1|altpll:altpll_component|_clk0 ;
 ; Maximum fan-out                             ; 253                                            ;
-; Total fan-out                               ; 5374                                           ;
-; Average fan-out                             ; 4.96                                           ;
+; Total fan-out                               ; 5386                                           ;
+; Average fan-out                             ; 4.94                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -211,19 +211,19 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
-; |DE2_TOP                                  ; 718 (245)         ; 196 (119)    ; 310000      ; 0            ; 0       ; 0         ; 93   ; 0            ; |DE2_TOP                                                                                                       ; work         ;
+; |DE2_TOP                                  ; 725 (245)         ; 196 (119)    ; 310000      ; 0            ; 0       ; 0         ; 93   ; 0            ; |DE2_TOP                                                                                                       ; work         ;
 ;    |Reset_Delay:r0|                       ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|Reset_Delay:r0                                                                                        ; work         ;
 ;    |VGA_Audio_PLL:p1|                     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|VGA_Audio_PLL:p1                                                                                      ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|VGA_Audio_PLL:p1|altpll:altpll_component                                                              ; work         ;
-;    |VGA_Controller:u1|                    ; 63 (63)           ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|VGA_Controller:u1                                                                                     ; work         ;
-;    |vga_buffer:display|                   ; 382 (0)           ; 14 (0)       ; 310000      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display                                                                                    ; work         ;
-;       |altsyncram:altsyncram_component|   ; 382 (0)           ; 14 (0)       ; 310000      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component                                                    ; work         ;
-;          |altsyncram_m352:auto_generated| ; 382 (0)           ; 14 (14)      ; 310000      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated                     ; work         ;
+;    |VGA_Controller:u1|                    ; 68 (68)           ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|VGA_Controller:u1                                                                                     ; work         ;
+;    |vga_buffer:display|                   ; 384 (0)           ; 14 (0)       ; 310000      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display                                                                                    ; work         ;
+;       |altsyncram:altsyncram_component|   ; 384 (0)           ; 14 (0)       ; 310000      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component                                                    ; work         ;
+;          |altsyncram_m352:auto_generated| ; 384 (0)           ; 14 (14)      ; 310000      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated                     ; work         ;
 ;             |decode_2qa:decode2|          ; 88 (88)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|decode_2qa:decode2  ; work         ;
 ;             |decode_2qa:decode_a|         ; 93 (93)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|decode_2qa:decode_a ; work         ;
-;             |decode_2qa:decode_b|         ; 86 (86)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|decode_2qa:decode_b ; work         ;
-;             |mux_bkb:mux4|                ; 57 (57)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|mux_bkb:mux4        ; work         ;
-;             |mux_bkb:mux5|                ; 58 (58)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|mux_bkb:mux5        ; work         ;
+;             |decode_2qa:decode_b|         ; 88 (88)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|decode_2qa:decode_b ; work         ;
+;             |mux_bkb:mux4|                ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|mux_bkb:mux4        ; work         ;
+;             |mux_bkb:mux5|                ; 59 (59)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_TOP|vga_buffer:display|altsyncram:altsyncram_component|altsyncram_m352:auto_generated|mux_bkb:mux5        ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -296,15 +296,15 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 60 bits   ; 120 LEs       ; 60 LEs               ; 60 LEs                 ; Yes        ; |DE2_TOP|y_rand[13]        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |DE2_TOP|sum[0]            ;
-; 7:1                ; 9 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |DE2_TOP|addr_reg[8]       ;
+; 4:1                ; 60 bits   ; 120 LEs       ; 60 LEs               ; 60 LEs                 ; Yes        ; |DE2_TOP|x_rand[7]         ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |DE2_TOP|sum[1]            ;
+; 7:1                ; 9 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |DE2_TOP|addr_reg[7]       ;
 ; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |DE2_TOP|addr_reg[11]      ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |DE2_TOP|x_walker[8]       ;
 ; 8:1                ; 6 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; Yes        ; |DE2_TOP|x_walker[9]       ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; Yes        ; |DE2_TOP|y_walker[1]       ;
 ; 8:1                ; 6 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; Yes        ; |DE2_TOP|y_walker[8]       ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |DE2_TOP|state~20          ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |DE2_TOP|state~19          ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE2_TOP|state~24          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
@@ -381,7 +381,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK4_MULTIPLY_BY              ; 1                 ; Untyped                           ;
 ; CLK3_MULTIPLY_BY              ; 1                 ; Untyped                           ;
 ; CLK2_MULTIPLY_BY              ; 9                 ; Signed Integer                    ;
-; CLK1_MULTIPLY_BY              ; 9                 ; Signed Integer                    ;
+; CLK1_MULTIPLY_BY              ; 2                 ; Signed Integer                    ;
 ; CLK0_MULTIPLY_BY              ; 9                 ; Signed Integer                    ;
 ; CLK9_DIVIDE_BY                ; 0                 ; Untyped                           ;
 ; CLK8_DIVIDE_BY                ; 0                 ; Untyped                           ;
@@ -391,7 +391,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK4_DIVIDE_BY                ; 1                 ; Untyped                           ;
 ; CLK3_DIVIDE_BY                ; 1                 ; Untyped                           ;
 ; CLK2_DIVIDE_BY                ; 10                ; Signed Integer                    ;
-; CLK1_DIVIDE_BY                ; 14                ; Signed Integer                    ;
+; CLK1_DIVIDE_BY                ; 3                 ; Signed Integer                    ;
 ; CLK0_DIVIDE_BY                ; 10                ; Signed Integer                    ;
 ; CLK9_PHASE_SHIFT              ; 0                 ; Untyped                           ;
 ; CLK8_PHASE_SHIFT              ; 0                 ; Untyped                           ;
@@ -719,18 +719,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------+
 ; Parameter Name ; Value ; Type                                  ;
 +----------------+-------+---------------------------------------+
-; H_SYNC_CYC     ; 96    ; Signed Integer                        ;
-; H_SYNC_BACK    ; 48    ; Signed Integer                        ;
+; H_SYNC_CYC     ; 95    ; Signed Integer                        ;
+; H_SYNC_BACK    ; 65    ; Signed Integer                        ;
 ; H_SYNC_ACT     ; 640   ; Signed Integer                        ;
-; H_SYNC_FRONT   ; 16    ; Signed Integer                        ;
-; H_SYNC_TOTAL   ; 800   ; Signed Integer                        ;
+; H_SYNC_FRONT   ; 0     ; Signed Integer                        ;
+; H_SYNC_MAX     ; 799   ; Signed Integer                        ;
 ; V_SYNC_CYC     ; 2     ; Signed Integer                        ;
-; V_SYNC_BACK    ; 32    ; Signed Integer                        ;
+; V_SYNC_BACK    ; 33    ; Signed Integer                        ;
 ; V_SYNC_ACT     ; 480   ; Signed Integer                        ;
-; V_SYNC_FRONT   ; 11    ; Signed Integer                        ;
-; V_SYNC_TOTAL   ; 525   ; Signed Integer                        ;
-; X_START        ; 148   ; Signed Integer                        ;
-; Y_START        ; 34    ; Signed Integer                        ;
+; V_SYNC_FRONT   ; 10    ; Signed Integer                        ;
+; V_SYNC_MAX     ; 524   ; Signed Integer                        ;
+; X_START        ; 160   ; Signed Integer                        ;
+; Y_START        ; 35    ; Signed Integer                        ;
 +----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -866,7 +866,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Mon Jul 06 19:56:04 2020
+    Info: Processing started: Mon Jul 06 20:49:19 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_m4k -c DE2_TOP
 Info: Found 1 design units, including 1 entities, in source file vga_buffer.v
     Info: Found entity 1: vga_buffer
@@ -874,13 +874,11 @@ Info: Found 1 design units, including 1 entities, in source file VGA_Controller/
     Info: Found entity 1: VGA_Controller
 Info: Found 1 design units, including 1 entities, in source file Reset_Delay.v
     Info: Found entity 1: Reset_Delay
-Info: Found 1 design units, including 1 entities, in source file VGA_Audio_PLL.v
-    Info: Found entity 1: VGA_Audio_PLL
 Warning (10229): Verilog HDL Expression warning at VGA_640x480_m4k_DLA.v(171): truncated literal to match 29 bits
 Info: Found 1 design units, including 1 entities, in source file VGA_640x480_m4k_DLA.v
     Info: Found entity 1: DE2_TOP
-Info: Found 1 design units, including 1 entities, in source file vga_buffer_2.v
-    Info: Found entity 1: vga_buffer_2
+Info: Found 1 design units, including 1 entities, in source file VGA_Controller/VGA_Audio_PLL.v
+    Info: Found entity 1: VGA_Audio_PLL
 Info: Elaborating entity "DE2_TOP" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at VGA_640x480_m4k_DLA.v(290): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_640x480_m4k_DLA.v(292): truncated value with size 32 to match size of target (10)
@@ -916,9 +914,9 @@ Info: Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with 
     Info: Parameter "clk0_duty_cycle" = "50"
     Info: Parameter "clk0_multiply_by" = "9"
     Info: Parameter "clk0_phase_shift" = "0"
-    Info: Parameter "clk1_divide_by" = "14"
+    Info: Parameter "clk1_divide_by" = "3"
     Info: Parameter "clk1_duty_cycle" = "50"
-    Info: Parameter "clk1_multiply_by" = "9"
+    Info: Parameter "clk1_multiply_by" = "2"
     Info: Parameter "clk1_phase_shift" = "0"
     Info: Parameter "clk2_divide_by" = "10"
     Info: Parameter "clk2_duty_cycle" = "50"
@@ -971,14 +969,9 @@ Info: Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with 
     Info: Parameter "port_extclk2" = "PORT_UNUSED"
     Info: Parameter "port_extclk3" = "PORT_UNUSED"
 Info: Elaborating entity "VGA_Controller" for hierarchy "VGA_Controller:u1"
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(76): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(79): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(82): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(100): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(101): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(102): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(161): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(187): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(106): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(107): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(108): truncated value with size 32 to match size of target (20)
 Info: Elaborating entity "vga_buffer" for hierarchy "vga_buffer:display"
 Info: Elaborating entity "altsyncram" for hierarchy "vga_buffer:display|altsyncram:altsyncram_component"
 Info: Elaborated megafunction instantiation "vga_buffer:display|altsyncram:altsyncram_component"
@@ -1077,16 +1070,16 @@ Warning: Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[16]"
     Warning (15610): No output dependent on input pin "SW[17]"
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info: Implemented 907 device resources after synthesis - the final resource count might be different
+Info: Implemented 912 device resources after synthesis - the final resource count might be different
     Info: Implemented 26 input pins
     Info: Implemented 64 output pins
     Info: Implemented 3 bidirectional pins
-    Info: Implemented 737 logic cells
+    Info: Implemented 742 logic cells
     Info: Implemented 76 RAM segments
     Info: Implemented 1 ClockLock PLLs
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 89 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 84 warnings
     Info: Peak virtual memory: 250 megabytes
-    Info: Processing ended: Mon Jul 06 19:56:09 2020
+    Info: Processing ended: Mon Jul 06 20:49:24 2020
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
