@@ -8,3 +8,5 @@
 change the setting as following figure.
 ![image](https://github.com/Waxpple/2d_cellular_automata/blob/master/de2-70_err03_9cf62d99-446c-41ad-be82-09982549bab2.gif)
 and compile it again
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/sjM8aRN-uBs/0.jpg)](https://www.youtube.com/watch?v=sjM8aRN-uBs)
